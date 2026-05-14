@@ -91,7 +91,7 @@ class PlayerTank {
         }
         updateUI();
     }
-    updatePowerLevel() { //guc seviyesi guncelleme (hasara gore)
+    updatePowerLevel() { //guc seviyesi guncelleme 
         const oldLevel=this.powerLevel;
         this.powerLevel=Math.floor(this.totalDamageTaken / 20) + 1; //20 hasar = 1 guc seviyesi
         if (this.powerLevel>oldLevel) {
